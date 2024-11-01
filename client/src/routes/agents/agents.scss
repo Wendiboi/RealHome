@@ -1,0 +1,40 @@
+.agents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+    .team{
+        display: flex;
+        margin-top: 50px;
+
+        .member{
+            background-color: #b2d6e4;
+            padding: 50px;
+            margin: 10px;;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            img{
+                border-radius: 10px;
+                width: 240px;
+            }
+
+            h2{
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            h4{
+                font-weight: 800;
+            }
+
+            p{
+                margin: 10px 0;
+                max-width: 240px;
+            }
+        }
+    }
+}

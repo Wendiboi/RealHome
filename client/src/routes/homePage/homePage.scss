@@ -1,0 +1,82 @@
+@import "/src/responsive.scss";
+
+.homePage{
+    display: flex;
+    height: 100%;
+
+    .textContainer{
+        flex: 3;
+        margin-right: -22px;
+
+        @include large{
+            margin-right: 0;
+        }
+        
+        .wrapper{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            height: 100%;
+
+            @include medium{
+                padding: 0;
+            }
+
+            @include small{
+                justify-content: flex-start;
+            }
+
+            .title{
+                font-size: 60px;
+
+                @include large{
+                    font-size: 48px;
+                }
+            }
+
+            .boxes{
+                display: flex;
+                justify-content: space-between;
+
+                @include small{
+                    display: none;
+                }
+
+                h1{
+                    font-size: 38px;
+
+                    @include large{
+                        font-size: 32px;
+                    }
+                }
+
+                h2{
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .imgContainer{
+        flex: 2;
+        background-color: #dbfff7;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @include medium{
+            display: none;
+        }
+
+        img{
+            width: 110%;
+            position: absolute;
+            right: 0;
+
+            @include large{
+                width: 100%;
+            }
+        };};
+}
